@@ -1,0 +1,11 @@
+//Adding user with admin preciliges
+# adduser -m 'username'
+> group[]: wheel video operator
+//other parameters can be setted in default. The fisr user should have the ID o 1001
+# echo "permit :wheel >> /usr/local/etc/doas.conf"
+
+//
+# sysrc dbus_enable=yes
+# sysrc hald_enable=yes
+#
+//
