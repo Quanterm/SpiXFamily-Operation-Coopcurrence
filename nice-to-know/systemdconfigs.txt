@@ -1,0 +1,3 @@
+#Some systemd functions that might be usefull for the user including awareness of flaws of some functions
+
+
