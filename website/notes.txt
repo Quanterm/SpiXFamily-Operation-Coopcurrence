@@ -1,1 +1,1 @@
-Will be made with JS with a framework
+Will be made with JS.
