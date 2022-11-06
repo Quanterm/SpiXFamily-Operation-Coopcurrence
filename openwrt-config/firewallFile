@@ -1,4 +1,4 @@
-##in /etc/config/firewall
+### > /etc/config/firewall
 config defaults
         option input 'ACCEPT'
         option output 'ACCEPT'
@@ -122,35 +122,35 @@ config rule
 
 ##Rule Vlan Interface
 
-config zone
-        option name 'vlan30'
-        list network 'vlan30'
-        option input 'ACCEPT'
-        option output 'ACCEPT'
-        option forward 'REJECT'`
+#config zone
+#        option name 'vlan30'
+#        list network 'vlan30'
+#        option input 'ACCEPT'
+#        option output 'ACCEPT'
+#        option forward 'REJECT'`
 
-config zone
-        option name 'vlan20'
-        list network 'vlan20'
-        option input 'ACCEPT'
-        option output 'ACCEPT'
-        option forward 'REJECT'`
+#config zone
+#        option name 'vlan20'
+#        list network 'vlan20'
+#        option input 'ACCEPT'
+#        option output 'ACCEPT'
+#        option forward 'REJECT'`
 
-config zone
-        option name 'vlan10'
-        list network 'vlan10'
-        option input 'ACCEPT'
-        option output 'ACCEPT'
-        option forward 'REJECT'`
+#config zone
+#        option name 'vlan10'
+#        list network 'vlan10'
+#        option input 'ACCEPT'
+#        option output 'ACCEPT'
+#        option forward 'REJECT'`
 
-config forwarding
-        option src 'vlan30'
-        option dest 'wan'`
+#config forwarding
+#        option src 'vlan30'
+#        option dest 'wan'`
 
-config forwarding
-        option src 'vlan20'
-        option dest 'wan'`
+#config forwarding
+#        option src 'vlan20'
+#        option dest 'wan'`
 
-config forwarding
-        option src 'vlan10'
-        option dest 'wan'`
+#config forwarding
+#        option src 'vlan10'
+#       option dest 'wan'`

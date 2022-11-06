@@ -1,27 +1,5 @@
-config interface 'loopback'
-        option device 'lo'
-        option proto 'static'
-        option ipaddr '127.0.0.1'
-        option netmask '255.0.0.0'
-
-config globals 'globals'
-        option ula_prefix 'fd9c:a680:abde::/48'
-
-config device
-        option name 'br-lan'
-        option type 'bridge'
-        list ports 'eth0'
-
-config interface 'lan'
-        option device 'br-lan'
-        option proto 'static'
-        option ipaddr '192.168.1.1'
-        option netmask '255.255.255.0'
-        option ip6assign '60'
-
-##DHCP wwan
-root@OpenWrt ~# cat /etc/config/dhcp
-
+### > /etc/config/dhcp
+# defaults
 config dnsmasq
         option domainneeded '1'
         option boguspriv '1'
@@ -63,38 +41,42 @@ config odhcpd 'odhcpd'
         option leasetrigger '/usr/sbin/odhcpd-update'
         option loglevel '4'
 
-### dhcp pool
-##Guest
-config dhcp 'vlan40'
-        option interface 'vlan40'
-        option start '100'
-        option limit '50'
-        option leasetime '8h'
 
+### Addons
+# Out comment following lines of 'config' to enable vlan configs
+
+### dhcp pool
+##--Guest Network--
+#config dhcp 'vlan40'
+#        option interface 'vlan40'
+#        option start '100'
+#        option limit '50'
+#        option leasetime '8h'
+
+##--Client Network--
 #config dhcp 'vlan30'
 #       option interface 'vlan30'
 #       option start '150'
 #       option limit '10'
 #       option leasetime '8h'
 
+##--Server Network--
 #config dhcp 'vlan20'
 #       option interface 'vlan7'
 #       option start '160'
 #       option limit '40'
 #       option leasetime '8h'
 
-##Admin
-config dhcp 'vlan10'
-        option interface 'vlan10'
-        option start '160'
-        option limit '40'
+##--Admin Network--
+#config dhcp 'vlan10'
+#        option interface 'vlan10'
+#        option start '160'
+#        option limit '40'
 #       option leasetime '8h'
 
 
-###routing between 2 interfaces
+### routing between 2 interfaces
 #config relay 'id'
 #        option interface 'lan'
 #        option local_addr '1.1.1.1'
 #        option server_addr '2.2.2.2'
-
-
