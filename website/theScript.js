@@ -7,7 +7,7 @@
 			
 			
 		
-// IP IP ---En1 . En2  . En3 .En4
+/** IP IP ---En1 . En2  . En3 .En4*/
 
 	var ipEn1 = 0;
 	var ipEn2 = 0;
@@ -15,7 +15,7 @@
 	var ipEn4 = 0;
 
 
-//-------IpWild-------------------
+/** IpWildCard */
 
 	var ipWn1 = 0;
 	var ipWn2 = 0;
@@ -23,7 +23,7 @@
 	var ipWn4 = 0;
 	
 
-//------Network Address------------
+/** Network Address*/
 
 	var ipNet1 = 0;	
 	var ipNet2 = 0;
@@ -31,7 +31,7 @@
 	var ipNet4 = 0;
 	
 	
-// -------BroadCast Adding Bit---------------------------
+/** BroadCast Adding Bit*/
 
 	var ipBr1 = 0;
 	var ipBr2 = 0;
@@ -45,15 +45,11 @@
 	var ipBro3 = 0;
 	var ipBro4 = 0;	
 
-//------Sub and Host -------------------------------------
-
+/** Sub and Host */
 	var ipSub = 0;
 	var ipHost = 0;
 					
-	
-
-
-//---------------------------------------------------------		
+/** ip */		
 	var validateIP = 0;
 	var rFormat = false;
 	var sellComm =0;
@@ -75,7 +71,7 @@
 	var brLIP =0;
 
     
- /*This Function will Get the IP subnet Mask Value from the Selection*/    
+ /** This Function will Get the IP subnet Mask Value from the Selection */    
     
 function ipMask(s2){
 	                                    
@@ -156,55 +152,38 @@ function ipMask(s2){
 else if(s2.value == "4"){
 		
 		
-		ipA = 255;
-
-		ipB = 255;
-
-		ipC = 255;
-
-		ipD = 248; 
+	ipA = 255;
+	ipB = 255;
+	ipC = 255;
+	ipD = 248; 
 		
-		//-------Value to add for Broad Cast --------------
+	/* Value to add for Broad Cast */
 		
-		ipBr1 = 0;
-		ipBr2 = 0;
-		ipBr3 = 0;
-		ipBr4 = 7;
-		
-		subBits =29;
-
-		hostBits =3 ;
-		
-		kase = 4 ;           
-		dropSelect =1;
+	ipBr1 = 0;
+	ipBr2 = 0;
+	ipBr3 = 0;
+	ipBr4 = 7;
+	subBits =29;
+	hostBits =3 ;
+	kase = 4 ;           
+	dropSelect =1;
 		
 }
 
-
-
 else if(s2.value == "5"){
 		
-		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 255;
-
 		ipD = 240; 
 		
-		
-		//-------Value to add for Broad Cast --------------
-		
+		/** Value to add for Broad Cast */
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 0;
 		ipBr4 = 15;
-		
 		subBits =28;
-
 		hostBits =4 ;
-
 		kase = 5 ;              
 		dropSelect =1;
 		
@@ -213,32 +192,18 @@ else if(s2.value == "5"){
 
 else if(s2.value == "6"){
 		
-		
-		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 255;
-
 		ipD = 224; 
 		
-		//-------Value to add for Broad Cast --------------
-		
+		/** Value to add for Broad Cast */
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 0;
 		ipBr4 = 31;
-		
 		subBits =27;
-
 		hostBits =5 ;
-		
-		
-		
-		
-		
-		
 		kase = 6 ;  
 		dropSelect =1;          
 	
@@ -304,25 +269,17 @@ else if(s2.value == "8"){
 		
 		
 		kase = 8 ;  
-		dropSelect =1;          
-	
-		
+		dropSelect =1;          	
 }
-
-//-------------------------------------------------------------------------------------------------
-
-
+	
 else if(s2.value == "9"){
 		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 255;
-
 		ipD = 0;    
 		
-			//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
@@ -330,32 +287,22 @@ else if(s2.value == "9"){
 		ipBr4 = 255;
 		
 		subBits =24;
-
 		hostBits =8 ;
-		
-		
-		
-		
 		kase = 9 ;  
 		dropSelect =1;
 		
 
 						} 
 
-	else if(s2.value == "10"){
-		
+else if(s2.value == "10"){
 		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 254;
-
 		ipD = 0; 
 		
 		
-			//-------Value to add for Broad Cast --------------
-		
+		/** Value to add for Broad Cast */
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 1;
@@ -382,7 +329,7 @@ else if(s2.value == "9"){
 		ipC = 252;
 		ipD = 0; 
 		
-		//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
@@ -390,9 +337,7 @@ else if(s2.value == "9"){
 		ipBr4 = 255;
 		
 		subBits =22;
-
 		hostBits =10 ;
-		
 		kase = 11 ;  
 		dropSelect =1;           
 	
@@ -404,29 +349,19 @@ else if(s2.value == "9"){
 
 else if(s2.value == "12"){
 		
-		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 248;
-
 		ipD = 0; 
 		
 		
-		//-------Value to add for Broad Cast --------------
-		
+		/** Value to add for Broad Cast */
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 7;
 		ipBr4 = 255;
-		
-		
 		subBits =21;
-
 		hostBits =11 ;
-		
-		
 		kase = 12 ;             
 		dropSelect =1;
 		
@@ -446,19 +381,15 @@ else if(s2.value == "13"){
 		ipD = 0; 
 		
 		
-		//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 15;
 		ipBr4 = 255;
 		
-		
 		subBits =20;
-
 		hostBits =12 ;
-		
-		
 		kase = 13 ;             
 		dropSelect =1;
 		
@@ -467,69 +398,41 @@ else if(s2.value == "13"){
 
 else if(s2.value == "14"){
 		
-		
-		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 224;
-
 		ipD = 0; 
 		
-		//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 31;
 		ipBr4 = 255;
-		
-		
-		
 		subBits =19;
-
 		hostBits =13 ;
-		
-		
-		
-		
 		kase = 14 ;  
 		dropSelect =1;          
-	
-		
 }
 
 else if(s2.value == "15"){
 		
-		
-		
 		ipA = 255;
-
 		ipB = 255;
-
 		ipC = 192;
-
 		ipD = 0; 
 		
 		
-		//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
 		ipBr3 = 63;
 		ipBr4 = 255;
-		
-		
 		subBits =18;
-
 		hostBits =14 ;
-		
-		
-		
 		kase = 15 ;  
 		dropSelect =1;          
-	
-		
 }
 
 else if(s2.value == "16"){
@@ -545,7 +448,7 @@ else if(s2.value == "16"){
 		ipD = 0; 
 		
 		
-		//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
@@ -581,16 +484,8 @@ else if(s2.value == "17"){
 		ipBr2 = 0;
 		ipBr3 = 255;
 		ipBr4 = 255;
-		
-		
-		
 		subBits =16;
-
 		hostBits =16 ;
-
-
-		
-		
 		kase = 17 ;  
 		dropSelect =1;
 		
@@ -599,15 +494,10 @@ else if(s2.value == "17"){
 
 else if(s2.value == "18"){
 	
-	
 	ipA = 255;
-
 	ipB = 254;
-
 	ipC = 0;
-
 	ipD = 0; 
-	
 	
 	//-------Value to add for Broad Cast --------------
 	
@@ -615,14 +505,8 @@ else if(s2.value == "18"){
 	ipBr2 = 1;
 	ipBr3 = 255;
 	ipBr4 = 255;
-	
-	
 	subBits =15;
-
 	hostBits =17 ;
-	
-	
-	
 	kase = 18 ;  
 	dropSelect =1;											   
 
@@ -733,17 +617,12 @@ else if(s2.value == "21"){
 
 else if(s2.value == "22"){
 		
-		
-		
 		ipA = 255;
-
 		ipB = 224;
-
 		ipC = 0;
-
 		ipD = 0; 
 		
-		//-------Value to add for Broad Cast --------------
+		/** Value to add for Broad Cast */
 		
 		ipBr1 = 0;
 		ipBr2 = 31;
@@ -751,11 +630,7 @@ else if(s2.value == "22"){
 		ipBr4 = 255;
 		
 		subBits =11;
-
 		hostBits =21 ;
-		
-		
-		
 		kase = 22 ;  
 		dropSelect =1;          
 	
@@ -764,17 +639,11 @@ else if(s2.value == "22"){
 
 else if(s2.value == "23"){
 		
-		
-		
 		ipA = 255;
-
 		ipB = 192;
-
 		ipC = 0;
-
 		ipD = 0; 
-		
-		
+	
 		/** Value to add for Broad Cast */
 		/** Br = Broadcast */
 		ipBr1 = 0;
@@ -817,7 +686,7 @@ else if(s2.value == "25"){
 		ipC = 0;
 		ipD = 0; 
 
-//-------Value to add for Broadcast --------------
+/** Value to add for Broadcast */
 		
 		ipBr1 = 0;
 		ipBr2 = 255;
@@ -899,19 +768,15 @@ else if(s2.value == "28"){
 	ipD = 0; 
 	
 	
-	//-------Value to add for Broad Cast --------------
+	/* Value to add for Broad Cast */
 	
 	ipBr1 = 7;
 	ipBr2 = 255;
 	ipBr3 = 255;
 	ipBr4 = 255;
 	
-	
 	subBits =5;
-
 	hostBits =27;
-	
-	
 	kase = 28 ;  
 	dropSelect =1;
 		
@@ -957,8 +822,6 @@ else if(s2.value == "30"){
 	
 	subBits =3;
 	hostBits =29;
-	
-	
 	kase = 30 ;  
 	dropSelect =1;          
 	
