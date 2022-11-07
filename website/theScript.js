@@ -875,7 +875,7 @@ else if(s2.value == "25"){
 		
 		ipBr1 = 3;
 		ipBr2 = 255;
-		ipBr3 = 2SS55;
+		ipBr3 = 255;
 		ipBr4 = 255;
 		
 		
