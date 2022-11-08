@@ -1,4 +1,6 @@
 import './functions.js';
+import './variables.js';
+
 export function calculateOrigin(){
          
     validateIP = document.getElementById("getIp").value;

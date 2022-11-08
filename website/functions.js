@@ -1,8 +1,11 @@
- /** This Function will Get the IP subnet Mask Value from the Selection */    
+import './variables.js';
+
+/** This Function will Get the IP subnet Mask Value from the Selection */    
     
 export function ipMask(s2){
-	                                    
+	                
   var s2 = document.getElementById(s2);
+
                                         
   if(s2.value == "1"){
     ipA = 255;			
@@ -54,7 +57,7 @@ export function ipMask(s2){
 		ipD = 252; 
 		
 		
-		//-------Value to add for Broad Cast --------------
+		//-------Value to add for Broadcast --------------
 		
 		ipBr1 = 0;
 		ipBr2 = 0;
@@ -780,7 +783,7 @@ else if(s2.value == "32"){
 	
 	kase = 32 ;  
 	dropSelect =1;          		
-}
+	}
 										    
 }
 
@@ -917,4 +920,4 @@ export function CheckIP(iPText){
       if(i==4)validIP=true; 
     }
     return [validIP,intIP[0],intIP[1],intIP[2],intIP[3] ];
-  };ö
+  };

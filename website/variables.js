@@ -1,4 +1,5 @@
- 
+import './main.js';
+import './variables.js';
 /** Subnet IP */    
 export var ipA = 0;
 export var ipB = 0;
