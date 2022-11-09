@@ -1,1 +1,1 @@
-Will be made with JS.
+A Subnetcalculator made with JS.
